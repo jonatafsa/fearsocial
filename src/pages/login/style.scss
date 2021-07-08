@@ -1,0 +1,203 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  aside {
+
+    width: 52%;
+    height: 100%;
+    background-color: var(--background-dark);
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1.2rem;
+
+    img {
+      width: 78%;
+    }
+
+    h2 {
+      padding: 1rem 0.5rem;
+      font-weight: 800;
+      font-size: 2.2rem;
+      padding: 1rem 8rem;
+      color: var(--primary);
+    }
+
+    p {
+      padding: 0 8rem;
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .content {
+    width:48%;
+    height: 60%;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 2rem;
+    }
+    
+    .social-account {
+      width: 85%;
+      height: 100%;
+      background: #FFF;
+      padding: 4rem;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      transition: .2s linear;
+      position: absolute;
+      
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        transition: .2s linear;
+
+        input {
+          padding: 1rem;
+          border-radius: 0.5rem;
+          border: 1px solid var(--text-ligth);
+          margin: 0 1rem;
+
+          &::placeholder {
+            color: var(--text-ligth);
+          }
+        }
+
+        input[type="file"] {
+          display: none;
+      }
+
+        .custom-file-upload {
+          border: 1px solid var(--text-ligth);
+          padding: 1rem;
+          margin: 0 1rem;
+          color: var(--text-ligth);
+          cursor: pointer;
+          border-radius: .5rem;
+          transition: .1s linear;
+          
+          &:hover{
+            background-color: #e559f9;  
+            color: #fff;
+          }
+        }
+
+        button {
+          // padding: 1rem;
+          margin-bottom: 0;
+          background-color: var(--primary);
+          color: #FFF;
+          border: 0;
+          border-radius: 0.5rem;
+          transition: .2s linear;
+
+          &:hover {
+            filter: brightness(0.9);
+            transform: scale(1.05);
+          }
+        }
+
+        .account-settings {
+          display: flex;
+          justify-content: space-between;
+
+          a {
+            text-decoration: none;
+            color: var(--primary);
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .divider {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2.2rem 0;
+        color: var(--text-ligth);
+        gap: 0.5rem;
+
+        &::before {
+          content: "";
+          width: 3rem;
+          height: 1px;
+          background: var(--text-ligth);
+        }
+
+        &::after {
+          content: "";
+          width: 3rem;
+          height: 1px;
+          background: var(--text-ligth);
+        }
+      }
+
+      button {
+          color: #FFF;
+          border: 0;
+          border-radius: .4rem;
+          padding: 1rem;
+          margin: 0 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          font-weight: 500;
+          margin-bottom: 1rem;
+          transition: .2s linear;
+
+          &:hover {
+            filter: brightness(0.9);
+            transform: scale(1.05);
+          }
+      }
+
+      .google-button {
+        background: #ea4335;
+      }
+      
+      .github-button {
+        background: #333;
+      }
+    }
+
+    .deactivate {
+      transform: translateX(-120%);
+      opacity: 0;
+      // display: none;
+    }
+  }
+}

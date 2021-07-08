@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --default: 286;
+  --primary: hsl(var(--default), 70%, 49%);
+  --secondary: hsl(var(--default), 60%, 22%);
+  --text-ligth: hsl(286, 5%, 80%);
+  --warning: hsl(var(--default), 100%, 25%);
+  --background-dark: hsl(var(--default), 20%, 7%);
+  --background-chat: hsl(286, 15%, 90%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f8f8f8;
+  color: #29292e;
+}
+
+body, input, button, textarea{
+  font: 400 16px 'Roboto', sans-serif;
+}
+
+img {
+  width: 100%;
+}
