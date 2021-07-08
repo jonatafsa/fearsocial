@@ -54,25 +54,25 @@ export function Feed() {
         <div className="list-friends">
           <div>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvTqqPEdT17PtRcePu3YgOHr7Ic4eLSOsMQOskxoqlQow4ST3-7RPBd6_R-CRNHLODxw&usqp=CAU" alt="" />
-            <span>Armando Botelho Pinto</span>
+            <span>Armando Bueno</span>
             <div className="online"></div>
           </div>
 
           <div>
             <img src="https://www.urologicomogi.com.br/wp-content/uploads/2019/02/person2.jpg" alt="" />
-            <span>Paula Tejano</span>
+            <span>Paula Maria</span>
             <div className="ausente"></div>
           </div>
 
           <div>
             <img src="https://eletropeldistribuidora.com.br/wp-content/uploads/2019/05/person-1-1.jpg" alt="" />
-            <span>Aronh Bador</span>
+            <span>Aronh Detah</span>
             <div className="offline"></div>
           </div>
 
           <div>
             <img src="https://www.urologicomogi.com.br/wp-content/uploads/2019/02/person2.jpg" alt="" />
-            <span>Paula Tejano</span>
+            <span>Paula Maria</span>
             <div className="ausente"></div>
           </div>
 
